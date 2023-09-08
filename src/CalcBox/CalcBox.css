@@ -1,0 +1,170 @@
+:root{
+  --bg-color:#1E1E1E;
+  --font-color:#FFFFFF;
+  --bg-buttons:#343434;
+  --bg-buttons-active:#4A4A4A;
+  --bg-operators:#d68100;
+  --bg-operators-active:#FF9800;
+  --bg-result:#00c056;
+  --bg-result-active:#00d660;
+  --bg-retro-button:#b80000;
+  --bg-retro-active-button:#a00000;
+  --bg-extend-button:#8a30ff;
+  --bg-extend-active-button:#9d52ff;
+  --bg-screen:#292929;
+}
+
+
+#content{
+  background: var(--bg-color);
+  padding: 1rem;
+  max-width: 35vw;
+  max-height: 70vh;
+}
+#subContent{
+  color: var(--font-color);
+  margin: auto;
+  display: grid;
+  grid-template-rows: 2fr 5fr;
+  grid-gap: 1rem;
+}
+
+
+#ButtonBox{
+  background: var(--bg-color);
+}
+#gridButton{
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr;
+}
+#NumberPad{
+  font-family: 'Inter';
+  padding: 0.5rem;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(3,1fr);
+}
+#Button{
+  background: var(--bg-buttons);
+  cursor: pointer;
+  font-size:300%;
+  font-weight: 600;
+  transition: 0.1s;
+}
+#Button:hover{
+  background: var(--bg-buttons-active);
+}
+#resultButton{
+  color: var(--bg-color);
+  cursor: pointer;
+  font-size:300%;
+  font-weight: 600;
+  transition: 0.1s;
+  background: var(--bg-result);
+}
+#resultButton:hover{
+  background: var(--bg-result-active) ;
+}
+#operatorButtons{
+  vertical-align: middle;
+  color: var(--bg-color);
+  background: var(--bg-operators);
+  cursor: pointer;
+  font-size:300%;
+  font-weight: 600;
+  transition: 0.1s;
+}
+#operatorButtons:hover{
+  background: var(--bg-operators-active);
+}
+
+
+
+#normalFunc{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-gap: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+#normalFunc #Button{
+  background: var(--bg-buttons);
+}
+#normalFunc #Button:hover{
+  background: var(--bg-buttons-active);
+}
+#RetroButton{
+  font-family: 'Fira Code';
+  background: var(--bg-retro-button);
+  cursor: pointer;
+  font-size:300%;
+  font-weight: 600;
+  transition: 0.1s;
+}
+#RetroButton:hover{
+  background: var(--bg-retro-active-button);
+}
+
+
+#ExtendFunc{
+  transition: 0.1s;
+  font-family: 'Inter';
+  display: grid;
+  grid-template-columns: repeat(2,1fr); 
+  grid-gap: 0.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+#ExtendButton{
+  vertical-align: middle;
+  color: var(--font-color);
+  background: var(--bg-extend-button);
+  font-family: 'Inter';
+  cursor: pointer;
+  font-size:200%;
+  font-weight: 600;
+  transition: 0.1s;
+}
+#ExtendButton:hover{
+  background: var(--bg-extend-active-button);
+}
+#toggleButton{
+  font-family: "Fira Code";
+}
+
+
+#Screen{
+  background: var(--bg-screen);
+}
+#screenCont{
+  height: 100%;
+  margin: auto;
+}
+#screenText{
+  margin: 5px;
+  padding: 5px;
+  color: var(--font-color);
+  font-family: 'Fira Code';
+  font-weight: 600;
+  white-space: nowrap;
+  resize: none;
+  background: none;
+  text-align: right;
+  font-size: 5rem;
+  border: none;
+  transition: .5s;
+}
+
+
+.roundBorder{
+  border-radius: 1.5rem;
+}
+.fullHeightWidth{
+  width: 100%;
+  height: 100%;
+}
+.flexCont{
+  display: flex;
+}
+.no-select {
+  user-select: none;
+}
