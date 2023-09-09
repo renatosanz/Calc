@@ -38,3 +38,4 @@ Este proyecto está bajo la Licencia MIT, lo que significa que puedes usar, modi
 ¡Disfruta de tu calculadora web y úsala para realizar cálculos rápidos en línea! Si tienes alguna pregunta o comentario, no dudes en abrir un problema o contactarnos a través de la sección de problemas del repositorio. 👍
 >>>>>>> 1d0e40d1b154e490c11c5ba647a76b375d907c7d
 # Calc
+# Calc

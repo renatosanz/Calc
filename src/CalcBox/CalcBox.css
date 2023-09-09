@@ -18,8 +18,6 @@
 #content{
   background: var(--bg-color);
   padding: 1rem;
-  max-width: 35vw;
-  max-height: 70vh;
 }
 #subContent{
   color: var(--font-color);
@@ -31,13 +29,12 @@
 
 
 #ButtonBox{
+  width: 100%;
   background: var(--bg-color);
 }
-#gridButton{
-  display: grid;
-  grid-template-columns: 3fr 4fr 3fr;
-}
+
 #NumberPad{
+  width: 40%;
   font-family: 'Inter';
   padding: 0.5rem;
   display: grid;
@@ -49,7 +46,7 @@
   cursor: pointer;
   font-size:300%;
   font-weight: 600;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 #Button:hover{
   background: var(--bg-buttons-active);
@@ -59,7 +56,7 @@
   cursor: pointer;
   font-size:300%;
   font-weight: 600;
-  transition: 0.1s;
+  transition: 0.2s;
   background: var(--bg-result);
 }
 #resultButton:hover{
@@ -72,7 +69,7 @@
   cursor: pointer;
   font-size:300%;
   font-weight: 600;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 #operatorButtons:hover{
   background: var(--bg-operators-active);
@@ -81,6 +78,7 @@
 
 
 #normalFunc{
+  width: 30%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(4,1fr);
@@ -99,7 +97,7 @@
   cursor: pointer;
   font-size:300%;
   font-weight: 600;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 #RetroButton:hover{
   background: var(--bg-retro-active-button);
@@ -107,7 +105,8 @@
 
 
 #ExtendFunc{
-  transition: 0.1s;
+  width: 30%;
+  transition:.2s;
   font-family: 'Inter';
   display: grid;
   grid-template-columns: repeat(2,1fr); 
@@ -122,7 +121,7 @@
   cursor: pointer;
   font-size:200%;
   font-weight: 600;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 #ExtendButton:hover{
   background: var(--bg-extend-active-button);
@@ -151,7 +150,7 @@
   text-align: right;
   font-size: 5rem;
   border: none;
-  transition: .5s;
+  transition: .2s;
 }
 
 
@@ -167,4 +166,56 @@
 }
 .no-select {
   user-select: none;
+}
+
+@media screen and (max-width:1700px) {
+  #PageContent{
+    padding: 1rem;
+    max-width: 60vw;
+    max-height: 70vh;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  #PageContent{
+    padding: 1rem;
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #subContent{
+    display: flex;
+    flex-direction: column;
+  }
+  #PageContent{
+    padding: 1rem;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  #gridButton{
+    flex-direction: column;
+    gap: 1vh;
+  }
+  
+  #ExtendFunc,#NumberPad,#normalFunc{
+    font-size: 1rem;
+    width: 100%;
+    margin: auto;
+  }
+  #ExtendFunc{
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  #NumberPad{
+    padding: 0%;
+  }
+  #normalFunc{
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  #screenText{
+    font-size: 3rem;
+  }
 }

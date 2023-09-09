@@ -1,7 +1,7 @@
 import { Parser } from "expr-eval"
 import valueText from "./ValueNumber"
 
-export default function printNumber(value,fun){
+export default function printNumber(value,sendFun){
   console.log(value)
   if (value==="AC") {
     valueText.val=""
@@ -31,5 +31,5 @@ export default function printNumber(value,fun){
     }
     //console.log("pressed: "+value, "screen: "+valueText.val)
   }
-  fun()
+  sendFun()
 }

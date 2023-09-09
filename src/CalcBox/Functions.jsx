@@ -8,10 +8,10 @@ export default function Functions({fun}) {
     <div id='normalFunc'>
       {
         sybols.map((value) => (
-          <Button value={value} fun={fun} selector={'operatorButtons'}/>
+          <Button value={value} sendFun={fun} selector={'operatorButtons'}/>
         ))
       }
-      <Button value={"="} fun={fun} selector={'resultButton'}/>
+      <Button value={"="} sendFun={fun} selector={'resultButton'}/>
     </div>
   )
 }

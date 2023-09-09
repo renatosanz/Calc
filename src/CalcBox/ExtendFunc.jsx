@@ -26,7 +26,7 @@ export default function ExtendFunc({fun,togglePad}) {
     ValueText.toggle = !ValueText.toggle
   }
   return (
-    <div id='ExtendFunc' style={{gridTemplateColumns:columns}}>
+    <div id='ExtendFunc' style={{}}>
         <Button value={"▶"} sendFun={toggleCard} selector={"ExtendButton"}/>
       {
         symbols.map((value) => (

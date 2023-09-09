@@ -1,4 +1,5 @@
 
+
 /* CSS */
 @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 /* Specify in CSS */
@@ -14,6 +15,11 @@ code { font-family: 'Fira Code', monospace; }
   :root { font-family: 'Inter var', sans-serif; }
 }
 
+/* Deshabilita la retroalimentación táctil en todos los elementos */
+* {
+  -webkit-tap-highlight-color: transparent; /* Safari, Chrome, Opera */
+  tap-highlight-color: transparent; /* Firefox */
+}
 
 body {
   margin: 0;
