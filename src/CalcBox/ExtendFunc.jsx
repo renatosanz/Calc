@@ -27,10 +27,10 @@ export default function ExtendFunc({fun,togglePad}) {
   }
   return (
     <div id='ExtendFunc' style={{gridTemplateColumns:columns}}>
-        <Button value={"▶"} fun={toggleCard} selector={"ExtendButton"}/>
+        <Button value={"▶"} sendFun={toggleCard} selector={"ExtendButton"}/>
       {
         symbols.map((value) => (
-          <Button value={value} fun={fun} selector={'ExtendButton'}/>
+          <Button value={value} sendFun={fun} selector={'ExtendButton'}/>
         ))
       }
     </div>

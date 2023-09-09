@@ -1,0 +1,13 @@
+#footer{
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+#footer *{
+  margin: auto;
+  text-decoration: none;
+  color: white;
+}
+#autor{
+  font-family: 'inter';
+}

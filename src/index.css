@@ -35,8 +35,7 @@ code {
 
 #root{
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
 }
 
 body{

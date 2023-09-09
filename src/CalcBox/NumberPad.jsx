@@ -8,11 +8,11 @@ export default function NumberPad({fun}) {
     <div id='NumberPad'>
       {
         numbers.map((index) => (
-        <Button value={index} fun={fun} selector={'Button'}/>
+        <Button value={index} sendFun={fun} selector={'Button'}/>
       ))
       }
-      <Button value={"."} fun={fun} selector={'Button'}/>
-      <Button value={"⌫"} fun={fun} selector={'RetroButton'}/>
+      <Button value={"."} sendFun={fun} selector={'Button'}/>
+      <Button value={"⌫"} sendFun={fun} selector={'RetroButton'}/>
     </div>
   )
 }

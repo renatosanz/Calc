@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from 'react'
 import '../CalcBox.css'
 import printNumber from '../calcEngine/CalcEngine'
 
-export default function Button({value,fun,selector}) {
+export default function Button({value,sendFun,selector}) {
 
   const handleKeyDown = event => {
     if (!isNaN(event.key) || isSymbol(event.key)) {
       console.log('User pressed: ', event.key);
-      printNumber(event.key,fun)
+      printNumber(event.key,sendFun)
     }
   };
 
@@ -23,7 +23,7 @@ export default function Button({value,fun,selector}) {
   }, []);
 
   return (
-    <div ref={ref} id={selector} tabIndex={-1} onKeyDown={handleKeyDown} onClick={()=>printNumber(value,fun)} aria-pressed className='no-select flexCont roundBorder'>
+    <div ref={ref} id={selector} tabIndex={-1} onKeyDown={handleKeyDown} onClick={()=>printNumber(value,sendFun)} aria-pressed className='no-select flexCont roundBorder'>
       <div style={{margin:'auto'}}>
         {value}
       </div>
