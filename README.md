@@ -1,28 +1,26 @@
-Este repositorio contiene una aplicación web de calculadora simple desarrollada con HTML, CSS y JavaScript, potenciada por Vite y React. La calculadora web te permite realizar operaciones matemáticas básicas, como suma, resta, multiplicación y división, y presenta una interfaz enriquecida con Awesome Icons. Es una herramienta útil para realizar cálculos rápidos en línea desde tu navegador web.
+This repository contains a simple web calculator application developed with HTML, CSS, and JavaScript, powered by Vite and React. The web calculator allows you to perform basic mathematical operations such as addition, subtraction, multiplication, and division, featuring a user-friendly interface adorned with Awesome Icons. It's a handy tool for quick online calculations right from your web browser.
 
-Características: 🧮
+Features: 🧮
 
-Realiza operaciones de suma, resta, multiplicación y división.
-Botones intuitivos y diseño fácil de usar, adornados con Awesome Icons.
-Muestra el historial de cálculos anteriores.
-Calculadora en tiempo real que muestra el resultado a medida que ingreses los números y operadores.
-Código limpio y bien organizado para facilitar la comprensión y la contribución.
-Personalización fácil del diseño y estilo a través de CSS personalizado.
-Totalmente receptiva, funciona en dispositivos móviles y de escritorio.
+Perform addition, subtraction, multiplication, and division operations.
+Intuitive buttons and easy-to-use design embellished with Awesome Icons.
+Display of previous calculation history.
+Real-time calculator that shows results as you enter numbers and operators.
+Clean and well-organized code for easy understanding and contributions.
+Easy customization of design and style through custom CSS.
+Fully responsive, works on both mobile and desktop devices.
+Usage Instructions: 🚀
 
-Instrucciones de Uso: 🚀
+Clone this repository to your local machine.
+Open the index.html file in your web browser.
+Use the calculator buttons to perform calculations.
+Observe previous calculation history at the bottom of the calculator.
+Contributions: 🤝
 
-Clona este repositorio en tu máquina local.
-Abre el archivo index.html en tu navegador web.
-Utiliza los botones de la calculadora para realizar cálculos.
-Observa el historial de cálculos anteriores en la parte inferior de la calculadora.
+Contributions and improvements are welcome! If you have ideas for new features or enhancements to the calculator, feel free to fork this repository and submit a pull request.
 
-Contribuciones: 🤝
+License: ⚖️
 
-¡Contribuciones y mejoras son bienvenidas! Si tienes ideas para nuevas características o mejoras en la calculadora, siéntete libre de bifurcar este repositorio y enviar una solicitud de extracción.
+This project is under the MIT License, which means you are free to use, modify, and distribute this code in your own projects.
 
-Licencia: ⚖️
-
-Este proyecto está bajo la Licencia MIT, lo que significa que puedes usar, modificar y distribuir libremente este código en tus propios proyectos.
-
-¡Disfruta de tu calculadora web y úsala para realizar cálculos rápidos en línea! Si tienes alguna pregunta o comentario, no dudes en abrir un problema o contactarnos a través de la sección de problemas del repositorio. 👍
+Enjoy your web calculator and use it for quick online calculations! If you have any questions or comments, don't hesitate to open an issue or contact us through the repository's issue section. 👍
