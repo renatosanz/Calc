@@ -5,18 +5,33 @@ export default function Footer() {
   return (
     <footer id='footer'>
       <span><span id='autor'>©</span> Renato S. Loeza - Web developer · 2023</span>
-      <a className='link' href="https://github.com/renatosanz/Calc" target="_blank" >
-        <i className="fa-2x  fa-solid fa-code"></i>
-      </a>
-      <a className='link' href="https://www.behance.net/renorenato" target="_blank">
-        <i className="fa-2x  fa-brands fa-behance"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/s%C3%A1nchez-loeza-renato-2326a6205/" target="_blank">
-        <i className="fa-2x  fa-brands fa-linkedin"></i>
-      </a>
-      <a className='link' href="https://github.com/renatosanz" target="_blank">
-        <i className="fa-2x  fa-brands fa-github"></i>
-      </a>
+          <a
+            href="https://github.com/renatosanz"
+            class="social-links__entry"
+            target="_blank"
+          >
+            <span>
+              <i class="fa-brands fa-2x fa-github-alt"></i>
+            </span>
+          </a>
+          <a
+            href="https://x.com/riprtx"
+            class="social-links__entry"
+            target="_blank"
+          >
+            <span>
+              <i class="fa-brands fa-2x fa-square-twitter"></i>
+            </span>
+          </a>
+          <a
+            href="https://www.behance.net/riprtx"
+            class="social-links__entry"
+            target="_blank"
+          >
+            <span>
+              <i class="fa-brands fa-2x fa-square-behance"></i>
+            </span>
+          </a>
     </footer>
   )
 }
